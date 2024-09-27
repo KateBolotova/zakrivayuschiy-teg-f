@@ -17,4 +17,62 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  color: var(--text-color);
+  background: var(--bg-url) center / cover no-repeat;
+  background-color: var(--bg-color);
+  background-attachment: fixed;
+}
+.header {
+  /*height: 100vh;*/
+  /*min-height: 668px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
+  min-height: 327px;
+  background-color: #fff;
+  outline: var(--text-color) solid 2px;
+  margin: 100px auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  outline: var(--text-color) solid 2px;
+  width: 375px;
+  height: 760px;
+}
+
+.card__title {
+  padding: 5px 10px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.card__image {
+  width: 375px;
+  height: 375px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__paragraph {
+  padding: 25px 25px 0;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+
+@media (width > 700px) {
+
 }
