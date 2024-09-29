@@ -1,6 +1,13 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --text-color: #000000;
-  --bg-color: #fff;
-  --bg-url: url("../images/background.png");
+  --text-color: #00CC14;
+  --bg-color: #000000;
+  --watermark-color: #00CC14;
+  --bg-gradient-color: #000000;
+  --bg-linear-gradient-color-start: #007F0C;
+  --bg-linear-gradient-color-end: #004306;
+  --text-weight-title: 785;
+  --text-weight-paragraph: 465;
 }
+
+
