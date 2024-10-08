@@ -97,16 +97,16 @@
   border-bottom: 2px solid var(--text-color);
 }
 
-.watermark {
-  position: relative;
+.card__image_container {
+  display: grid;
+  grid-area: 1 / 1;
 }
 
-.watermark:after {
-  position: absolute;
-  content: "</HTML>";
-  top: 0;
-  right: 0;
-  margin: 25px 13px 0 0;
+.watermark {
+  display: grid;
+  grid-area: 1 / 1;
+  text-align: end;
+  margin: 25px 25px 0 0;
   font-family: 'Press Start 2P', serif;
   font-size: 14px;
   mix-blend-mode: hard-light;
@@ -114,18 +114,20 @@
 }
 
 @supports (text-stroke: 1px var(--watermark-color)) {
-  .watermark:after {
+  .watermark {
     text-stroke: 1px var(--watermark-color);
   }
 }
 
 @supports (-webkit-text-stroke: 1px var(--watermark-color)) {
-  .watermark:after {
+  .watermark {
     -webkit-text-stroke: 1px var(--watermark-color);
   }
 }
 
 .card__image {
+  display: grid;
+  grid-area: 1 / 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -139,7 +141,6 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
-  font-variation-settings: 'slnt' 0;
 }
 
 .card__like {
