@@ -17,6 +17,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  min-width: 375px;
+  max-width: 700px;
+  margin: auto;
   color: var(--text-color);
   background-image: repeating-linear-gradient(90deg, var(--bg-gradient-color), var(--bg-gradient-color), transparent, transparent 2px),
   repeating-linear-gradient(var(--bg-gradient-color), var(--bg-gradient-color), transparent, transparent 2px),
@@ -25,16 +28,10 @@
   font-variation-settings: "wght" var(--text-weight-paragraph);
 }
 
-.stretching_layout {
-  width: clamp(375px, calc(700 / 740), 700px);
-}
-
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 700px;
   background-color: var(--bg-color);
   outline: var(--text-color) solid 2px;
   margin: 102px auto;
@@ -44,15 +41,16 @@
 }
 
 .header__accent_title {
-  font-size: 49px;
-  line-height: 49px;
+  font-size: 65px;
+  line-height: 65px;
   padding: 136px 0 0;
 }
 
 .header__title {
   text-transform: uppercase;
   padding: 20px 0 0;
-  font-size: inherit;
+  font-size: 23px;
+  line-height: 23px;
 }
 
 .header__theme-menu {
@@ -97,9 +95,6 @@
   flex-direction: column;
   background-color: var(--bg-color);
   outline: var(--text-color) solid 2px;
-  width: 100%;
-  min-width: 375px;
-  max-width: 700px;
 }
 
 .card__title {
@@ -198,6 +193,11 @@
   padding: 15px 20px;
 }
 
+.footer__floppy {
+  width: 21px;
+  height: 21px;
+}
+
 .dialog__title {
   font-family: 'Press Start 2P', serif;
   font-size: 14px;
@@ -205,7 +205,7 @@
   width: 234px;
 }
 
-.floppy_min {
+.dialog__floppy {
   align-self: center;
   margin-right: 20px;
 }
@@ -231,20 +231,43 @@
 }
 
 .dialog__insert_floppy::backdrop {
-  background: #000000;
+  background: #000;
   opacity: 0.75;
 }
 
-@media (width >= 700px) {
+@media (width <= 375px) {
   .header__title {
-    font-size: 23px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .header__accent_title {
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 49px;
+    line-height: 49px;
+    padding: 120px 0 0;
   }
-  
-  
+
+  .watermark {
+    margin: 25px 13px 0 0;
+  }
+
+  .footer__button {
+    margin: 53px 0 100px;
+    flex-direction: column;
+  }
+
+  .footer__floppy {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dialog__insert_floppy {
+    width: 341px;
+    padding: 30px 40px;
+    font-size: 0;
+  }
+
+  .dialog__title {
+    width: 198px;
+  }
 }
