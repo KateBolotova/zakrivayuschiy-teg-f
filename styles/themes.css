@@ -6,6 +6,8 @@
 */
 :root {
   --sparks-color: #FF0000;
+  --heart-main-color: #FF0000;
+  --heart-dark-color: #000;
 }
 
 html.theme-light {

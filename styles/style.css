@@ -256,7 +256,7 @@
   margin-left: 8px;
 }
 
-.card__heart_button {
+.card__icon-button {
   border: none;
   cursor: pointer;
   background: transparent;
@@ -265,11 +265,11 @@
   height: 36px;
 }
 
-.card__heart_button:focus {
+.card__icon-button:focus {
   outline: none;
 }
 
-.card__heart_button:focus-visible {
+.card__icon-button:focus-visible {
   outline: 2px solid var(--text-color);
   transition: color 0.3s ease;
 }
@@ -338,6 +338,112 @@ html.theme-dark .floppy {
   background: #000;
   opacity: 0.75;
 }
+
+.card__icon-button .contour {
+  fill: var(--heart-dark-color);
+  transition: fill 0.1s linear;
+}
+
+.card__icon-button .main-body,
+.card__icon-button .core,
+.card__icon-button .sparks {
+  fill: none;
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--heart-dark-color);
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--heart-dark-color);
+  transition-delay: 0.05s;
+}
+
+.card__icon-button .core {
+  transition-delay: 0.03s;
+}
+
+.card__icon-button .main-body {
+  fill: none;
+  transition-delay: 0s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-main-color);
+  transition-delay: 0s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-main-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon .contour {
+  fill: var(--heart-dark-color);
+  transition: fill 0.1s linear;
+}
+
+.like-icon .main-body,
+.like-icon .core,
+.like-icon .sparks {
+  fill: none;
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--heart-main-color);
+  transition-delay: 0s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--heart-main-color);
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--heart-main-color);
+  transition-delay: 0.06s;
+  transition-duration: 0.3s;
+}
+
+@keyframes heart-scaling {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.like-icon.is-liked {
+  animation: heart-scaling 0.3s ease-in 0.1s both;
+}
+
+@keyframes heart-sparkling {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.like-icon.is-liked .sparks {
+  animation: heart-sparkling 0.3s ease-in 0.3s both;
+}
+
+.like-icon:not(.is-liked) .contour {
+  fill: var(--heart-dark-color);
+  transition-duration: 0.1s;
+}
+
 
 @media (width <= 375px) {
   .header__title {
