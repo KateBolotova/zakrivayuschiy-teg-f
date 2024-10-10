@@ -9,11 +9,8 @@
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
-
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
 */
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -340,33 +337,22 @@ html.theme-dark .floppy {
 }
 
 .card__icon-button .contour {
-  fill: var(--heart-dark-color);
+  fill: var(--text-color);
   transition: fill 0.1s linear;
 }
 
-.card__icon-button .main-body,
-.card__icon-button .core,
 .card__icon-button .sparks {
   fill: none;
-  transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .core {
   fill: var(--heart-dark-color);
+  transition-delay: 0s;
 }
 
 .card__icon-button:hover .main-body {
   fill: var(--heart-dark-color);
   transition-delay: 0.05s;
-}
-
-.card__icon-button .core {
-  transition-delay: 0.03s;
-}
-
-.card__icon-button .main-body {
-  fill: none;
-  transition-delay: 0s;
 }
 
 .card__icon-button:active .core {
@@ -379,32 +365,15 @@ html.theme-dark .floppy {
   transition-delay: 0.05s;
 }
 
-.like-icon .contour {
-  fill: var(--heart-dark-color);
-  transition: fill 0.1s linear;
-}
-
-.like-icon .main-body,
-.like-icon .core,
-.like-icon .sparks {
-  fill: none;
-  transition: fill 0.3s linear;
-}
-
-.like-icon.is-liked .core {
+.like-icon.is-liked .core,
+.like-icon.is-liked .main-body,
+.like-icon.is-liked .sparks {
   fill: var(--heart-main-color);
-  transition-delay: 0s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-main-color);
-  transition-delay: 0.05s;
+  transition-duration: 0.3s;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--heart-main-color);
-  transition-delay: 0.06s;
-  transition-duration: 0.3s;
 }
 
 @keyframes heart-scaling {
@@ -435,15 +404,41 @@ html.theme-dark .floppy {
   }
 }
 
+.card__image#image_odinary {
+  filter: brightness(70%);
+}
+
+.card__image#image_min_saturation {
+  filter: saturate(20%);
+}
+
+.card__image#image_max_contrast {
+  filter: contrast(60%);
+}
+
+.card__image#image_dark {
+  filter: invert(0.1);
+}
+
+.card__image#image_negative {
+  filter: grayscale(0.9);
+}
+
+.card__image#image_sepia {
+  filter: sepia(0.7);
+}
+
+.card__image#image_blur {
+  filter: blur(0.1);
+}
+
+.card__image#image_sepia_negative {
+  filter: brightness(140%) saturate(80%);
+}
+
 .like-icon.is-liked .sparks {
   animation: heart-sparkling 0.3s ease-in 0.3s both;
 }
-
-.like-icon:not(.is-liked) .contour {
-  fill: var(--heart-dark-color);
-  transition-duration: 0.1s;
-}
-
 
 @media (width <= 375px) {
   .header__title {
