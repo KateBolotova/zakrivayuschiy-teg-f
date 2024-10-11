@@ -18,9 +18,6 @@
   max-width: 700px;
   margin: auto;
   color: var(--text-color);
-  background-image: repeating-linear-gradient(90deg, var(--bg-gradient-color), var(--bg-gradient-color), transparent, transparent 2px),
-  repeating-linear-gradient(var(--bg-gradient-color), var(--bg-gradient-color), transparent, transparent 2px),
-  linear-gradient(var(--bg-linear-gradient-color-start) 0.01%, var(--bg-linear-gradient-color-end) 100%);
   background-size: cover;
   font-variation-settings: "wght" var(--text-weight-paragraph);
 }
