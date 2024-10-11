@@ -46,7 +46,6 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--text-color);
-  transition: color 0.3s ease;
 }
 
 .card__icon-button .contour {

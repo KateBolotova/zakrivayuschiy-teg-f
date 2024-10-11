@@ -218,6 +218,8 @@
   padding: 0;
   width: 39px;
   height: 36px;
+  outline: none;
+  transition: outline 0.3s ease;
 }
 
 .save {
