@@ -1,16 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -68,15 +55,6 @@
   position: relative;
 }
 
-.theme-menu__button:hover {
-  opacity: 0.6;
-}
-
-.theme-menu__button:focus {
-  opacity: 0.6;
-  outline: none;
-}
-
 .theme-menu__button:focus-visible:after {
   content: '';
   bottom: -2px;
@@ -103,26 +81,6 @@
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-}
-
-.theme-menu__button:disabled:before {
-  content: "▶";
-  position: absolute;
-  top: 0;
-  left: -20px;
-  animation: tic 0.6s ease infinite;
-}
-
-@keyframes tic {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(4px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
 }
 
 .main {
@@ -226,11 +184,6 @@
   z-index: 2;
 }
 
-.button:focus {
-  filter: drop-shadow(2px 2px 0px var(--text-color));
-  transition: 0.5s ease;
-}
-
 .button:before {
   content: '';
   position: absolute;
@@ -265,15 +218,6 @@
   padding: 0;
   width: 39px;
   height: 36px;
-}
-
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
-  outline: 2px solid var(--text-color);
-  transition: color 0.3s ease;
 }
 
 .save {
@@ -339,110 +283,6 @@ html.theme-dark .floppy {
 .dialog__insert_floppy::backdrop {
   background: #000;
   opacity: 0.75;
-}
-
-.card__icon-button .contour {
-  fill: var(--text-color);
-  transition: fill 0.1s linear;
-}
-
-.card__icon-button .sparks {
-  fill: none;
-}
-
-.card__icon-button:hover .core {
-  fill: var(--heart-dark-color);
-  transition-delay: 0s;
-}
-
-.card__icon-button:hover .main-body {
-  fill: var(--heart-dark-color);
-  transition-delay: 0.05s;
-}
-
-.card__icon-button:active .core {
-  fill: var(--heart-main-color);
-  transition-delay: 0s;
-}
-
-.card__icon-button:active .main-body {
-  fill: var(--heart-main-color);
-  transition-delay: 0.05s;
-}
-
-.like-icon.is-liked .core,
-.like-icon.is-liked .main-body,
-.like-icon.is-liked .sparks {
-  fill: var(--heart-main-color);
-  transition-duration: 0.3s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-main-color);
-}
-
-@keyframes heart-scaling {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.like-icon.is-liked {
-  animation: heart-scaling 0.3s ease-in 0.1s both;
-}
-
-@keyframes heart-sparkling {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.card__image#image_ordinary {
-  filter: brightness(70%);
-}
-
-.card__image#image_min_saturation {
-  filter: saturate(20%);
-}
-
-.card__image#image_max_contrast {
-  filter: contrast(60%);
-}
-
-.card__image#image_dark {
-  filter: invert(0.1);
-}
-
-.card__image#image_negative {
-  filter: grayscale(0.9);
-}
-
-.card__image#image_sepia {
-  filter: sepia(0.7);
-}
-
-.card__image#image_blur {
-  filter: blur(0.1em);
-}
-
-.card__image#image_sepia_negative {
-  filter: brightness(140%) saturate(80%);
-}
-
-.like-icon.is-liked .sparks {
-  animation: heart-sparkling 0.3s ease-in 0.3s both;
 }
 
 @media (width <= 375px) {
