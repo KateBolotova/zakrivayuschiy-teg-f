@@ -6,7 +6,6 @@
   margin: auto;
   color: var(--text-color);
   background-size: cover;
-  background-attachment: fixed;
   font-variation-settings: "wght" var(--text-weight-paragraph);
 }
 
