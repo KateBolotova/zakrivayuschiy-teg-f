@@ -15,8 +15,8 @@
   align-items: center;
   background-color: var(--bg-color);
   outline: var(--text-color) solid 2px;
-  margin: 102px auto;
-  font-family: 'Press Start 2P', serif;
+  margin: 102px auto 104px;
+  font-family: 'Press Start 2P', fantasy;
   font-size: 14px;
   line-height: 14px;
 }
@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 51px;
+  gap: 52px;
 }
 
 .card {
@@ -114,7 +114,7 @@
   display: grid;
   grid-area: 1 / 1;
   margin: 25px 25px 0 0;
-  font-family: 'Press Start 2P', serif;
+  font-family: 'Press Start 2P', fantasy;
   font-size: 14px;
   mix-blend-mode: hard-light;
   text-shadow: 1px 1px 1px var(--watermark-color);
@@ -150,7 +150,7 @@
 }
 
 .card__paragraph {
-  padding: 25px 27px 0;
+  padding: 23px 27px 0;
   display: flex;
   flex-direction: column;
   gap: 27px;
@@ -159,12 +159,12 @@
 .card__like {
   display: flex;
   justify-content: end;
-  padding: 25px 0 0;
-  margin: 0 27px 27px 0;
+  padding: 27px 0 0;
+  margin: 0 28px 26px 0;
 }
 
 .button {
-  font-family: 'Press Start 2P', serif;
+  font-family: 'Press Start 2P', fantasy;
   font-size: 14px;
   line-height: 90%;
   text-align: center;
@@ -189,8 +189,8 @@
 }
 
 .card__like-button {
-  height: 36px;
-  min-width: 130px;
+  height: 34px;
+  min-width: 128px;
   margin-left: 8px;
 }
 
@@ -211,13 +211,14 @@
 }
 
 .save__button {
-  margin: 53px 0 100px;
+  margin: 0 0 100px;
   background: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
   padding: 15px 20px;
+  line-height: 120%;
 }
 
 html.theme-dark .floppy {
@@ -233,7 +234,7 @@ html.theme-dark .floppy {
 }
 
 .dialog__title {
-  font-family: 'Press Start 2P', serif;
+  font-family: 'Press Start 2P', fantasy;
   font-size: 14px;
   line-height: 150%;
   width: 234px;
@@ -280,13 +281,21 @@ html.theme-dark .floppy {
     padding: 120px 0 0;
   }
 
+  .main {
+    gap: 53px;
+  }
+  
+  .card__title {
+    padding: 5px 12px 4px;
+  }
+  
   .watermark {
-    margin: 25px 13px 0 0;
+    margin: 22px 13px 0 0;
   }
 
   .save__button {
-    margin: 53px 0 100px;
     flex-direction: column;
+    gap: 6px;
   }
 
   .save__floppy {
