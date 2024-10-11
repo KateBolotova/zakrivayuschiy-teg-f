@@ -36,7 +36,7 @@
 }
 
 .header__accent_title {
-  font-size: 65px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   line-height: 65px;
   padding: 136px 0 0;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 .header__title {
   text-transform: uppercase;
   padding: 20px 0 0;
-  font-size: 23px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 23px;
 }
 
@@ -174,7 +174,7 @@
   text-transform: uppercase;
 }
 
-@supports (text-stroke: 1px var(--watermark-color)) or (-webkit-text-stroke: 1px var(--watermark-color)){
+@supports (text-stroke: 1px var(--watermark-color)) or (-webkit-text-stroke: 1px var(--watermark-color)) {
   .watermark {
     text-shadow: none;
     text-stroke: 1px var(--watermark-color);
@@ -252,7 +252,7 @@
   color: var(--bg-color);
 }
 
-.card__like_button {
+.card__like-button {
   height: 36px;
   min-width: 130px;
   margin-left: 8px;
@@ -447,12 +447,10 @@ html.theme-dark .floppy {
 
 @media (width <= 375px) {
   .header__title {
-    font-size: 14px;
     line-height: 14px;
   }
 
   .header__accent_title {
-    font-size: 49px;
     line-height: 49px;
     padding: 120px 0 0;
   }
