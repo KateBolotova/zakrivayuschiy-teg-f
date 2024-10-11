@@ -175,34 +175,18 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  color: var(--text-color);
-  transition: color 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .button span {
   position: relative;
   z-index: 2;
-}
-
-.button:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--text-color);
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
-  z-index: 1;
-}
-
-.button:hover:before {
-  transform: translateX(0);
-}
-
-.button:hover {
-  color: var(--bg-color);
+  background: linear-gradient(90deg, var(--text-color) 50%, var(--bg-color) 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200%;
+  transition: 0.5s ease-in-out;
 }
 
 .card__like-button {
