@@ -12,23 +12,17 @@
   <link rel="stylesheet" href="./styles/style.css"/>
   <link rel="stylesheet" href="./styles/animations.css"/>
   <link rel="stylesheet" href="./styles/themes.css"/>
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="dark light">
   <script src="./scripts/set-theme.js"></script>
 </head>
 <body class="page">
-<svg class="visually-hidden" xmlns="http://www.w3.org/2000/svg">
-  <symbol id="floppy" viewBox="0 0 39 39" fill="currentColor">
-    <path
-      d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
-  </symbol>
-</svg>
 <header class="header">
-  <h1 class="header__accent_title">
-    &lt;/HTML&gt;
-  </h1>
-  <h2 class="header__title">
+  <a class="header__accent_title">
+    &lt;/html&gt;
+  </a>
+  <h1 class="header__title">
     закрывающий тег
-  </h2>
+  </h1>
   <nav class="theme-menu header__theme-menu">
     <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
     <ul class="theme-menu__list">
@@ -65,13 +59,13 @@
 </header>
 <main class="main">
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       Фритрек и нулевой спринт: Подготовка к работе
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
-        &lt;/HTML&gt;
-      </div>
+      <span class="watermark watermark__abbr">
+        &lt;/html&gt;
+      </span>
       <img
         class="card__image"
         id="image_odinary"
@@ -89,7 +83,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -106,19 +100,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       1 спринт: Я — чистый лист
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
-        &lt;/HTML&gt;
-      </div>
+      <span class="watermark watermark__abbr">
+        &lt;/html&gt;
+      </span>
       <img
         class="card__image"
         id="image_min_saturation"
@@ -137,7 +131,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -154,19 +148,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       1 спринт: А если не получится?
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
-        &lt;CSS&gt;
-      </div>
+      <span class="watermark watermark__abbr">
+        &lt;css&gt;
+      </span>
       <img
         class="card__image"
         id="image_max_contrast"
@@ -184,7 +178,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -201,19 +195,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       2 спринт: Погоня за идеалом
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
+      <span class="watermark">
         &lt;desigions&gt;
-      </div>
+      </span>
       <img
         class="card__image"
         id="image_dark"
@@ -232,7 +226,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -249,19 +243,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       2 спринт: О тех, кто рядом
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
+      <span class="watermark">
         care
-      </div>
+      </span>
       <img
         class="card__image"
         id="image_negative"
@@ -280,7 +274,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -297,19 +291,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       3 спринт: Обходные стратегии
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
+      <span class="watermark">
         &lt;support&gt;
-      </div>
+      </span>
       <img
         class="card__image"
         id="image_sepia"
@@ -327,7 +321,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -344,19 +338,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       3 спринт: Когда опускаются руки
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
+      <span class="watermark">
         &lt;lifes-style: none&gt;
-      </div>
+      </span>
       <img
         class="card__image"
         id="image_blur"
@@ -375,7 +369,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -392,19 +386,19 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
   <article class="card">
-    <h3 class="card__title">
+    <h2 class="card__title">
       «Сейчас я здесь»
-    </h3>
+    </h2>
     <div class="card__image_container">
-      <div class="watermark">
+      <span class="watermark">
         &lt;experience&gt;
-      </div>
+      </span>
       <img
         class="card__image"
         id="image_sepia_negative"
@@ -424,7 +418,7 @@
       </p>
     </div>
     <div class="card__like">
-      <button class="card__icon-button">
+      <button type="button" class="card__icon-button">
         <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none"
              xmlns="http://www.w3.org/2000/svg">
           <path class="contour"
@@ -441,43 +435,44 @@
                 fill="var(--heart-main-color)"/>
         </svg>
       </button>
-      <button class="button card__like_button">
+      <button type="button" class="button card__like_button">
         <span class="button__text">Like</span>
       </button>
     </div>
   </article>
-</main>
-<footer class="footer">
-  <button
-    class="button footer__button"
-    type="button"
-    onclick="window['insert_floppy'].showModal();"
-    aria-controls="insert_floppy"
-  >
-    <svg class="footer__floppy" width="28" height="28" fill="currentColor">
-      <use xlink:href="#floppy"></use>
-    </svg>
-    <span>Сохранить на память</span>
-  </button>
-  <dialog class="dialog__insert_floppy" id="insert_floppy">
-    <div class="dialog__insert_floppy_content">
-      <svg class="dialog__floppy" width="39" height="39" fill="currentColor">
-        <use xlink:href="#floppy"></use>
-      </svg>
-      <h2 class="dialog__title">
-        Вставьте
-        дискету, чтобы продолжить
-      </h2>
-    </div>
+  <div class="save">
     <button
-      class="button closing_button"
+      class="button save__button"
       type="button"
-      onclick="window['insert_floppy'].close()"
+      onclick="window['insert_floppy'].showModal();"
+      aria-controls="insert_floppy"
     >
-      <span>ок</span>
+      <svg class="save__floppy" width="28" height="28" fill="currentColor">
+        <use href="svg/floppy.svg#floppy"></use>
+      </svg>
+      <span>Сохранить на память</span>
     </button>
-  </dialog>
-</footer>
+    <dialog class="dialog__insert_floppy" id="insert_floppy">
+      <div class="dialog__insert_floppy_content">
+        <svg class="dialog__floppy" width="39" height="39" fill="currentColor">
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+        <h2 class="dialog__title">
+          Вставьте
+          дискету, чтобы продолжить
+        </h2>
+      </div>
+      <form method="dialog">
+        <button
+          class="button closing_button"
+          type="submit"
+        >
+          <span>ок</span>
+        </button>
+      </form>
+    </dialog>
+  </div>
+</main>
 <script src="./scripts/like.js"></script>
 </body>
 </html>
