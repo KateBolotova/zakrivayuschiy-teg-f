@@ -6,6 +6,7 @@
 */
 html.theme-light {
   --text-color: #000000;
+  --button-invert-color: #fff;
   --bg-color: #fff;
   --watermark-color: #FFFFFF;
   --bg-gradient-color: #d3d3d3;
@@ -24,6 +25,7 @@ html.theme-light {
 @media (prefers-color-scheme: light) {
   :root {
     --text-color: #000000;
+    --button-invert-color: #fff;
     --bg-color: #fff;
     --watermark-color: #FFFFFF;
     --bg-gradient-color: #d3d3d3;
@@ -41,6 +43,7 @@ html.theme-light {
 
 html.theme-dark {
   --text-color: #00CC14;
+  --button-invert-color: #00CC14;
   --bg-color: #000000;
   --watermark-color: #00CC14;
   --bg-gradient-color: #000000;

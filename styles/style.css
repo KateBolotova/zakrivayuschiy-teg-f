@@ -200,24 +200,13 @@
   font-size: 14px;
   line-height: 90%;
   text-align: center;
+  color: var(--text-color);
   background: var(--bg-color);
   outline: 2px solid var(--text-color);
   border: none;
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  transition: 0.5s ease-in-out;
-}
-
-.button span {
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(90deg, var(--text-color) 50%, var(--bg-color) 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: 200%;
-  transition: 0.5s ease-in-out;
 }
 
 .card__like-button {
@@ -253,7 +242,7 @@
   line-height: 120%;
 }
 
-html.theme-dark .floppy {
+html.theme-dark .save__floppy {
   color: var(--text-color);
   mix-blend-mode: difference;
 }
@@ -261,8 +250,7 @@ html.theme-dark .floppy {
 .save__floppy {
   width: 21px;
   height: 21px;
-  position: relative;
-  z-index: 2;
+  color: var(--text-color);
 }
 
 .dialog__title {
