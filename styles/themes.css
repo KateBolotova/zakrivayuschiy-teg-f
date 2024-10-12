@@ -32,12 +32,11 @@ html.theme-light {
     --text-weight-title: 700;
     --text-weight-paragraph: 400;
     --heart-dark-color: #000;
+    background-image:
+      repeating-linear-gradient(90deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      repeating-linear-gradient(180deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
+      linear-gradient(180deg, var(--bg-linear-gradient-color-start) 0%, var(--bg-linear-gradient-color-start) 0.01%, var(--bg-linear-gradient-color-end) 100%);
   }
-
-  background-image:
-    repeating-linear-gradient(90deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
-    repeating-linear-gradient(180deg, var(--bg-gradient-color) 0 2px, rgb(0 0 0 / 0) 2px 4px),
-    linear-gradient(180deg, var(--bg-linear-gradient-color-start) 0%, var(--bg-linear-gradient-color-start) 0.01%, var(--bg-linear-gradient-color-end) 100%);
 }
 
 html.theme-dark {

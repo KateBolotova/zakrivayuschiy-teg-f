@@ -131,11 +131,11 @@
   text-transform: uppercase;
 }
 
-@supports (text-stroke: 1px var(--watermark-color)) or (-webkit-text-stroke: 1px var(--watermark-color)) {
+@supports (text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color)) {
   .watermark {
     text-shadow: none;
-    text-stroke: 1px var(--watermark-color);
-    -webkit-text-stroke: 1px var(--watermark-color);
+    text-stroke: 1px var(--bg-color);
+    -webkit-text-stroke: 1px var(--bg-color);
   }
 }
 
@@ -147,6 +147,38 @@
   object-fit: cover;
   object-position: center;
   outline: 2px solid var(--text-color);
+}
+
+.card__image#image_ordinary {
+  filter: brightness(70%);
+}
+
+.card__image#image_min_saturation {
+  filter: saturate(20%);
+}
+
+.card__image#image_max_contrast {
+  filter: contrast(60%);
+}
+
+.card__image#image_dark {
+  filter: invert(0.1);
+}
+
+.card__image#image_negative {
+  filter: grayscale(0.9);
+}
+
+.card__image#image_sepia {
+  filter: sepia(0.7);
+}
+
+.card__image#image_blur {
+  filter: blur(0.1em);
+}
+
+.card__image#image_sepia_negative {
+  filter: brightness(140%) saturate(80%);
 }
 
 .card__paragraph {
