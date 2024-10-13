@@ -117,7 +117,7 @@
   font-family: 'Press Start 2P', fantasy;
   font-size: 14px;
   mix-blend-mode: hard-light;
-  text-shadow: 1px 1px 1px var(--watermark-color);
+  text-shadow: 1px 1px 1px var(--bg-color);
   opacity: 0.5;
   line-height: 14px;
   text-transform: lowercase;
@@ -283,7 +283,8 @@ html.theme-dark .save__floppy {
   margin-top: 30px;
   width: 100%;
   line-height: 90%;
-  color: var(--text-color)
+  color: var(--text-color);
+  text-transform: uppercase;
 }
 
 .dialog__insert_floppy::backdrop {
